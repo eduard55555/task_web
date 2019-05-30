@@ -1,0 +1,35 @@
+extends layout
+
+block libs
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+  script(src='/socket.io/socket.io.js')
+  script(src='/javascripts/instructionsSocket.js')
+
+block content
+  .container-fluid
+    #trap_id REQ-TRAP
+    h1 Instruction
+    p The app has three routes:
+    table.table.table-striped
+      thead.thead-dark
+        tr
+          th(scope='col') Route
+          th(scope='col') Descriptrion
+      tbody
+        tr
+          th(scope='row') /
+          td splash page with some instructions
+        tr
+          th(scope='row') /:trap_id
+          td send requests to be captured here
+        tr
+          th(scope='row') /:trap_id/requests
+          td display requests here
+  br
+  .container-fluid
+    h4 List of traps:
+    table.table.table-striped#traps
+      thead.thead-dark
+        tr
+          th(scope='col') Trap ID

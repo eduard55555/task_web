@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'EarthPhototype';
+  src: url('12561.otf');
+}
+
+body {
+  padding: 10px;
+}
+
+.request {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-top:1px solid grey;
+}
+
+.container{
+  margin-left: 50px !important;
+  border-left:1px solid grey;
+}
+
+.objectField {
+  padding-left: 50px;
+}
+
+.fieldName {
+  font-weight: 600;
+}
+
+#trap_id {
+  font-family: 'EarthPhototype';
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#traps {
+  width: 200px;
+}
